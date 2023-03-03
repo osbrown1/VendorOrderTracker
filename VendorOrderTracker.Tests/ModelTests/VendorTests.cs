@@ -49,7 +49,7 @@ namespace VendorOrderTracker.Tests
       public void GetId_ReturnsVendorId_Int()
       {
         string vendorName = "Test Vendor";
-        Vendor newArtist = new Vendor(vendorName);
+        Vendor newVendor = new Vendor(vendorName);
         int result = newVendor.Id;
         Assert.AreEqual(1, result);
       }
