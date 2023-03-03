@@ -45,5 +45,14 @@ namespace VendorOrderTracker.Tests
         Assert.AreEqual(updatedVendorName, result);
       }
 
+      [TestMethod]
+      public void GetId_ReturnsVendorId_Int()
+      {
+        string vendorName = "Test Vendor";
+        Vendor newArtist = new Vendor(vendorName);
+        int result = newVendor.Id;
+        Assert.AreEqual(1, result);
+      }
+
   }
 }
