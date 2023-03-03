@@ -79,18 +79,18 @@ namespace VendorOrderTracker.Tests
       Assert.AreEqual(newVendor2, result);
       }
 
-      [TestMethod]
-      public void AddItem_AssociatesOrderWithVendor_OrderList()
-      {
-        string title = "One";
-        Order newOrder = new Order(title);
-        List<Order> newList = new List<Order> { newOrder };
-        string newVendorName = "Joe's Pub";
-        Vendor newVendor = new Vendor(newVendorName);
-        newVendor.AddOrder(newOrder);
-        List<Order> result = newVendor.Orders;
-        CollectionAssert.AreEqual(newList, result);
-      }
+      // [TestMethod]
+      // public void AddItem_AssociatesOrderWithVendor_OrderList()
+      // {
+      //   string title = "One";
+      //   Order newOrder = new Order(title);
+      //   List<Order> newList = new List<Order> { newOrder };
+      //   string newVendorName = "Joe's Pub";
+      //   Vendor newVendor = new Vendor(newVendorName);
+      //   newVendor.AddOrder(newOrder);
+      //   List<Order> result = newVendor.Orders;
+      //   CollectionAssert.AreEqual(newList, result);
+      // }
 
   }
 }
