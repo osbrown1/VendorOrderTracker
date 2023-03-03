@@ -35,5 +35,21 @@ namespace VendorOrderTracker.Tests
       //Assert
       Assert.AreEqual(title, result);
     } 
+
+    [TestMethod]
+    public void SetTitle_SetTitle_String()
+    {
+      //Arrange
+      string title = "Bread";
+      Order newOrder = new Order(title);
+
+      //Act
+      string updatedTitle = "Whole Wheat";
+      newOrder.Title = updatedTitle;
+      string result = newOrder.Title;
+
+      //Assert
+      Assert.AreEqual(updatedTitle, result);
+    } 
   }
 }
