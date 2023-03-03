@@ -33,5 +33,17 @@ namespace VendorOrderTracker.Tests
       Assert.AreEqual(vendorName, result);
     }
 
+    [TestMethod]
+      public void SetVendorName_SetVendorName_string()
+      {
+        string vendorName = "Test Vendor";
+        Vendor newVendor = new Vendor(vendorName);
+
+        string updatedVendorName = "Joe's Pub";
+        newVendor.VendorName = updatedVendorName;
+        string result = newVendor.VendorName;
+        Assert.AreEqual(updatedVendorName, result);
+      }
+
   }
 }
