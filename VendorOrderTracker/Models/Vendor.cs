@@ -9,12 +9,15 @@ namespace VendorOrderTracker.Models
     public int Id { get; }
     public List<Vendor> Vendors { get; set; }
 
+    public List<Order> Orders { get; set; }
+
     public Vendor(string vendorName)
   {
     VendorName = vendorName;
     _instances.Add(this);
     Id = _instances.Count;
     Vendors = new List<Vendor> {};
+    Orders = new List<Order> {};
   }
 
   public static void ClearAll()
