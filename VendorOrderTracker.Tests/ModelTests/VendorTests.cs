@@ -91,6 +91,5 @@ namespace VendorOrderTracker.Tests
         List<Order> result = newVendor.Orders;
         CollectionAssert.AreEqual(newList, result);
       }
-              //^debugging^
   }
 }
