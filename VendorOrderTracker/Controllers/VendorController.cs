@@ -8,7 +8,7 @@ namespace VendorOrderTracker.Controllers
   public class VendorController : Controller
   {
 
-    [HttpGet("/Vendor")]
+    [HttpGet("/Vendors")]
     public ActionResult Index()
     {
       List<Vendor> allVendors = Vendor.GetAll();
