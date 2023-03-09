@@ -24,7 +24,7 @@ _{Users can create entries to organize and track their vendors along with the co
 
 ## Known Bugs
 
-* _Website won't load pages after clicking links from homepage._
+* _None._
 
 ## License
 
