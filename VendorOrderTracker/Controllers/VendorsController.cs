@@ -4,10 +4,10 @@ using VendorOrderTracker.Models;
 
 namespace VendorOrderTracker.Controllers
 {
-  public class VendorController : Controller
+  public class VendorsController : Controller
   {
 
-    [HttpGet("/Vendors")]
+    [HttpGet("/vendors")]
     public ActionResult Index()
     {
       List<Vendor> allVendors = Vendor.GetAll();
